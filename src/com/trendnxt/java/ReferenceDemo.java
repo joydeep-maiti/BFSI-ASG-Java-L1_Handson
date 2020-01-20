@@ -10,5 +10,11 @@ public class ReferenceDemo {
 		MyClass1 class1Object = new MyClass1 ();
 		MyClass2 class2Object = new MyClass2 ();
 		MyClass3 class3Object = new MyClass3();
+		
+		//class2Object = class3Object;
+		//class3Object = class2Object;
+		MyInterface InterfaceRef = class3Object;	//correct
+		//class3Object = (MyClass3) class2Object;
+		//class2Object = class1Object;
 	}
 }
